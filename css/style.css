@@ -1,0 +1,164 @@
+* {
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(19, 13, 36);
+}
+
+header {
+    padding: 10px;
+    background-color: rgb(19, 13, 36);
+    color: white;
+}
+
+.button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.button-agregar {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7700ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.button-agregar:hover {
+    transform: scale(1.1);
+    background-color: #6014b8;
+}
+
+.button-agregar2 {
+    width: 50px;
+    height: 50px;
+    background-color: #7700ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.button-agregar2:hover {
+    transform: scale(1.1);
+    background-color: #6014b8;
+}
+
+
+.modal-content {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.button-eliminar {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: tomato;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.button-eliminar:hover {
+    transform: scale(1.1);
+    background-color: rgb(221, 85, 61);
+}
+
+textarea,
+input[type="text"] {
+    border-style: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #e2e2e2;
+}
+
+/* NOTAS */
+.nota-link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nota-link:hover {
+    transform: scale(1.04);
+}
+
+#container-notas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    background-color: rgb(19, 13, 36);
+    padding: 10px;
+}
+
+.nota {
+    height: 300px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: white;
+    overflow: hidden;
+    padding: 12px;
+}
+
+.nota .contenido {
+    flex-grow: 1;
+    flex-shrink: 1;
+    white-space: normal;
+    overflow: hidden;
+}
+
+.nota .contenido p {
+    margin: 0;
+    overflow: hidden;
+    white-space: normal;
+    text-align: justify;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+
+.nota .contenido h5 {
+    margin-bottom: 10px;
+    overflow: hidden;
+    white-space: normal;
+    text-align: left;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+
+.nota .footer {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .nota {
+        width: 100%;
+    }
+}
